@@ -1,5 +1,10 @@
+import NavBar from "./components/NavBar";
+import "./style.scss";
+
 export default function App() {
     return (
-        <h1>App Component</h1>
+        <div>
+            <NavBar></NavBar>
+        </div>
     )
 }
