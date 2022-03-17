@@ -6,3 +6,6 @@ stop:
 
 remove:
 	docker container rm airbnb-app
+
+build:
+	docker build -t airbnb-app:latest .
