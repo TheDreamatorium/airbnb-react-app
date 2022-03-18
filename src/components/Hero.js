@@ -2,8 +2,8 @@ import gridImg from "../images/grid-hero.png";
 
 export default function Hero() {
     return (
-        <div className="hero">
-            <img className="hero-grid" src={gridImg}/>
+        <section className="hero">
+            <img className="hero-grid" src={gridImg} alt="grid"/>
             <div className="hero-text">
                 <h1>Online Experiences</h1>
                 <p>
@@ -11,6 +11,6 @@ export default function Hero() {
                     one-of-a-kind hosts-all without leaving home.
                 </p>
             </div>
-        </div>
+        </section>
     )    
 }

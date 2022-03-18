@@ -19,15 +19,12 @@ body {
     .hero {
       display: flex;
       flex-direction: column;
-      max-width: 100%;
-      margin-right: auto;
-      margin-left: 0;
+      margin: 0;
 
       .hero-grid {
-        width: 50%;
-        height: 100%;
+        max-width: 400px;
         align-self: center;
-        margin-top: 2.5rem;
+        margin: 2.5rem 0 auto 0;
       }
 
       .hero-text {
@@ -35,6 +32,64 @@ body {
 
         p {
           font-weight: 300;
+        }
+      }
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 175px;
+      margin-left: 2rem;
+      
+      .card-status {
+        position: absolute;
+        font-size: 0.6875rem;
+        margin: 0.3rem auto auto 0.3rem;
+        background-color: #FFFFFF;
+        padding: 0.2rem 0.2rem;
+        border-radius: 2px;
+      }
+
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        .card-rating {
+          display: flex;
+          flex-direction: row;
+          max-height: 1.5rem;
+          padding: 0.5rem 0;
+
+          img {
+            max-height: 1rem;
+            align-self: center;
+          }
+
+          .card-rating-text {
+            font-size: 0.8rem;
+            align-self: center;
+            margin-left: 0.2rem;
+            font-weight: 100;
+
+            span {
+              color: grey;
+            }
+          }
+        }
+
+        .card-label {
+          font-weight: 100;
+          font-size: 0.7rem;
+        }
+
+        .card-price {
+          font-weight: 100;
+          font-size: 0.7rem;
+
+          span {
+            font-weight: 700;
+          }
         }
       }
     }
