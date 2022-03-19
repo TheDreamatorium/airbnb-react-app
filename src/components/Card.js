@@ -1,5 +1,3 @@
-import starImg from "../images/star.png";
-
 export default function Card({
     img, 
     rating, 
@@ -14,7 +12,7 @@ export default function Card({
             <span className="card-status">SOLD OUT</span>
             <div className="card-info">
                 <div className="card-rating">
-                    <img src={starImg} className="card-star" alt="star"/>
+                    <img src="/images/star.png" className="card-star" alt="star"/>
                     <span className="card-rating-text">{rating} <span>({reviewCount}).{country} </span></span>
                 </div>
                 <label className="card-label">{title}</label>
