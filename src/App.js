@@ -9,13 +9,9 @@ export default function App() {
 
     const cardElements = cardData.map(data => {
         return <Card
-        img={"/images/" + data.img}
-        rating={data.rating}
-        reviewCount={data.reviewCount}
-        country={data.country}
-        title={data.title}
-        price={data.price}
-    />
+        key={data.id}
+        {...data}
+        />
     })
     return (
         <div>
